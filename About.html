@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>RedStore</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+        p{
+            color: #555;
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            max-width: 100%;
+            padding: 50px 0;
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+        .btn{
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+        .btn:hover{
+            background: #563433;
+        }
+        .header{
+            background: radial-gradient(#fff,#ffd6d6);
+        }
+        .header .row{
+            margin-top: 50px;
+        }
+        .categories{
+            margin: 70px 0;
+        }
+        .col-3{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        .col-3 img{
+            width: 100%;
+        }
+        .small-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .col-4{
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 img{
+            width: 100%;
+        }
+        .title{
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after{
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h4{
+            color: #555;
+            font-weight: normal;
+        }
+        .col-4 p{
+            font-size: 14px;
+        }
+        .col-4:hover{
+            transform: translateY(-5px);
+        }
+        .offer{
+            background: radial-gradient(#fff,#ffd6d6);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+        .col-2 .offer-img{
+            padding: 50px;
+        }
+        small{
+            color: #555;
+        }
+        .brand{
+            margin: 100px 0;
+        }
+        .col-5{
+            width: 160px;
+        }
+        .row-2{
+            justify-content: space-between;
+            margin: 100px auto 50px;
+        }
+        select{
+            border: 1px solid #ff523b;
+            padding: 5px;
+        }
+        select:focus{
+            outline: none;
+        }
+        .page-btn{
+            margin: 0 auto 80px;
+        }
+        .page-btn span{
+            display: inline-block;
+            border: 1px solid #ff523b;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .page-btn span:hover{
+            background: #ff523b;
+            color: white;
+        }
+        .r{
+            text-align: center;
+            color: #ff523b;
+        }
+        .e{
+            text-align: center;
+        }
+        fieldset{
+            width: 525px;
+            height: 550;
+            margin: auto;
+            border: none;
+            border-radius: 50px;
+            background: wheat;
+        }
+        fieldset:hover{
+            transform: translateY(-5px);
+        }
+        a:hover{
+            color: #ff523b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="RedStore.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="RedStore.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkcMBFpcPShGPhHCBjCnqRkfmKSzVxGxxjHvTgzTjSscbjrpjwcnbKDVCKNzgclnzjVCT">Contact</a></li>
+                    <li><a href="Acc.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+        </div>
+    </div>
+    <fieldset>
+    <h1 class="r">About Us</h1><br>
+        <h2 class="e">Hello There</h2><br>
+        <h3 class="e">We are RedStore E-Commerce website <br> to sell sports products to get you in touch with sports. <br> Let me explain Sign Up steps.</h3>
+        </fieldset><br>
+        <h1 class="r">Step:1</h1>
+        <h2 class="e">Go To Account</h2><br>
+        <h1 class="r">Step:2</h1>
+        <h2 class="e">Enter Your Details</h2><br>
+        <h1 class="r">Step:3</h1>
+        <h2 class="e">Now Enter Your Otp</h2><br>
+        <h1 class="r">Step:4</h1>
+        <h2 class="e">Then Sign Up</h2><br>
+        <h1 class="r">Step:5</h1>
+        <h2 class="e">What You Are Looking For! Shop Now</h2><br>
+        <marquee><h2> Sign Up Now😁</h2></marquee>
+
+
+</body>
+</html>

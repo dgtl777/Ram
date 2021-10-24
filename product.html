@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>RedStore</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        nav{
+            flex: 1;
+            text-align: right;
+        }
+        nav ul{
+            display: inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+        p{
+            color: #555;
+        }
+        .container{
+            max-width: 1300px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+        }
+        .col-2 img{
+            max-width: 100%;
+            padding: 50px 0;
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+        .btn{
+            display: inline-block;
+            background: #ff523b;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
+        .btn:hover{
+            background: #563433;
+        }
+        .header{
+            background: radial-gradient(#fff,#ffd6d6);
+        }
+        .header .row{
+            margin-top: 50px;
+        }
+        .categories{
+            margin: 70px 0;
+        }
+        .col-3{
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        .col-3 img{
+            width: 100%;
+        }
+        .small-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .col-4{
+            flex-basis: 25%;
+            padding: 10px;
+            min-width: 200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 img{
+            width: 100%;
+        }
+        .title{
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: #555;
+        }
+        .title::after{
+            content: '';
+            background: #ff523b;
+            width: 80px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h4{
+            color: #555;
+            font-weight: normal;
+        }
+        .col-4 p{
+            font-size: 14px;
+        }
+        .col-4:hover{
+            transform: translateY(-5px);
+        }
+        .offer{
+            background: radial-gradient(#fff,#ffd6d6);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+        .col-2 .offer-img{
+            padding: 50px;
+        }
+        small{
+            color: #555;
+        }
+        .brand{
+            margin: 100px 0;
+        }
+        .col-5{
+            width: 160px;
+        }
+        .row-2{
+            justify-content: space-between;
+            margin: 100px auto 50px;
+        }
+        select{
+            border: 1px solid #ff523b;
+            padding: 5px;
+        }
+        select:focus{
+            outline: none;
+        }
+        .page-btn{
+            margin: 0 auto 80px;
+        }
+        .page-btn span{
+            display: inline-block;
+            border: 1px solid #ff523b;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .page-btn span:hover{
+            background: #ff523b;
+            color: white;
+        }
+        a:hover{
+            color: #ff523b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="RedStore.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="RedStore.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkcMBFpcPShGPhHCBjCnqRkfmKSzVxGxxjHvTgzTjSscbjrpjwcnbKDVCKNzgclnzjVCT">Contact</a></li>
+                    <li><a href="Acc.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+        </div>
+    </div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Products</h2>
+        <select name="" id="">
+            <option value="">Default Shorting</option>
+            <option value="">Short br price</option>
+            <option value="">Short by popularity</option>
+            <option value="">Short by rating</option>
+            <option value="">Short by sale</option>
+        </select>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="product-1.jpg" >
+            <h4>Red Printed T-Shirt</h4>
+            <p>₹500.00</p>
+        </div>
+        <div class="col-4">
+            <img src="product-2.jpg" >
+            <h4>HRX Shoes</h4>
+            <p>₹750.00</p>
+        </div>
+        <div class="col-4">
+            <img src="product-3.jpg" >
+            <h4>Pantaloons Jeans</h4>
+            <p>₹1,000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="product-4.jpg" >
+            <h4>Puma T-Shirt</h4>
+            <p>₹900.00</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-5.jpg" >
+                <h4>Nike Shoes</h4>
+                <p>₹3,250.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-6.jpg" >
+                <h4>Puma X T-Shirt</h4>
+                <p>₹2,000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-7.jpg" >
+                <h4>HRX Socks</h4>
+                <p>₹600.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-8.jpg" >
+                <h4>Fossil Watch</h4>
+                <p>₹1,100.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product-9.jpg" >
+                <h4>RoadSter Watch</h4>
+                <p>₹500.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-10.jpg" >
+                <h4>Puma Shoes</h4>
+                <p>₹3,750.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-11.jpg" >
+                <h4>Jackel Shoes</h4>
+                <p>₹1,000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-12.jpg" >
+                <h4>Addidas Track</h4>
+                <p>₹450.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+</body>
+</html>

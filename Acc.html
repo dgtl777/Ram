@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>RedStore</title>
+    <style>
+        body{
+            background: radial-gradient(#fff,#ffd6d6);
+            text-align: center;
+        }
+        span{
+            color: #ff523b;
+        }
+        h1{
+            font-style: italic;
+        }
+        .box{
+            margin-left: 150px;
+            height: 400px;
+            width: 400px;
+           background-color: rgb(208, 247, 247);
+            margin: auto;
+        }
+        .vd{
+            height: 25px;
+            color: black;
+        }
+        button{
+            background-color: red;
+        }
+        .dd{
+            height: 25px;
+            background-color: skyblue;
+        }
+        .logo{
+            margin-right: 1120px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a href=""><img src="logo.png" width="125px"></a>
+    </div>
+    <header>
+        <h1>(Sign Up) Page</h1>
+    </header>
+    <div class="box">
+        <h2><span class>Sign Up</span></h2>
+        <input type="text" class="vd" placeholder="UserName" required><br><br>
+        <input type="text" class="vd" placeholder="Password" required><br><br>
+        <input type="text" class="vd" placeholder="NickName" required><br><br>
+        <input type="text" class="vd" placeholder="Your OTP" required><br><br>
+        <button class="vd" onclick="clickme()">Get OTP</button><br><br>
+       <a href="RedStore.html"><button class="dd">Sign Up</button></a>
+    </div>
+</body>
+<script>
+    function clickme() {
+        alert("Your OTP: 6001");
+    }
+</script>
+</html>
